@@ -26,3 +26,14 @@ This project demonstrates an end-to-end data pipeline built using SQL, Python, a
 
 ## 🚀 Outcome
 Built a complete data pipeline and dashboard for business decision-making.
+## 📊 Dashboard Preview
+
+![Dashboard](dashboard/dashboard.png)
+
+## 🚀 How to Run
+
+1. Import dataset into SQL Server  
+2. Run SQL queries from /sql/queries.sql  
+3. Run Python pipeline:  
+   python scripts/main.py  
+4. Open Power BI dashboard
