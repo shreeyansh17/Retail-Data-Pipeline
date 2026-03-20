@@ -26,3 +26,9 @@ This project demonstrates an end-to-end data pipeline built using SQL, Python, a
 
 ## 🚀 Outcome
 Built a complete data pipeline and dashboard for business decision-making.
+
+## 🏗 Architecture
+![Architecture](images/architecture.png)
+
+## 📊 Dashboard Preview
+![Dashboard](images/dashboard.png)
