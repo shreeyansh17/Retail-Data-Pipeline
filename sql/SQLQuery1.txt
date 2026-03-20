@@ -1,0 +1,42 @@
+-- Create Table
+CREATE TABLE sales_data (
+    Row_ID INT,
+    Order_ID NVARCHAR(50),
+    Order_Date NVARCHAR(50),
+    Ship_Date NVARCHAR(50),
+    Ship_Mode NVARCHAR(50),
+    Customer_ID NVARCHAR(50),
+    Customer_Name NVARCHAR(100),
+    Segment NVARCHAR(50),
+    Country NVARCHAR(50),
+    City NVARCHAR(50),
+    State NVARCHAR(50),
+    Postal_Code NVARCHAR(20),
+    Region NVARCHAR(50),
+    Product_ID NVARCHAR(50),
+    Category NVARCHAR(50),
+    Sub_Category NVARCHAR(50),
+    Product_Name NVARCHAR(200),
+    Sales FLOAT,
+    Profit FLOAT
+);
+
+-- Check data
+SELECT TOP 10 * FROM sales_data;
+
+-- KPI Queries
+SELECT SUM(Sales) AS Total_Sales FROM sales_data;
+
+SELECT SUM(Profit) AS Total_Profit FROM sales_data;
+
+-- Category Analysis
+SELECT Category, SUM(Sales) AS Sales
+FROM sales_data
+GROUP BY Category
+ORDER BY Sales DESC;
+
+-- Region Analysis
+SELECT Region, SUM(Sales) AS Sales
+FROM sales_data
+GROUP BY Region
+ORDER BY Sales DESC;
